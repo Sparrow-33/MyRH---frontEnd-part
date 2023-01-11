@@ -1,0 +1,27 @@
+<div class="flex justify-center gap-10 mb-10 ">
+
+  <div class=" relative ">
+    <input
+      [(ngModel)]="hero.name"
+      type="text" id="name" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="name"/>
+  </div>
+
+  <div class=" relative ">
+    <input
+      [(ngModel)]="hero.power"
+      type="text" id="power" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="power"/>
+  </div>
+
+  <div class=" relative ">
+    <input
+      [(ngModel)]="hero.ImgURL"
+      type="text" id="imageURL" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="image URL"/>
+  </div>
+
+  <button
+    (click)="add()"
+    class=" px-6 py-2  transition ease-in duration-200 uppercase rounded-lg hover:bg-gray-800 hover:text-white border-2 border-gray-900 focus:outline-none">
+    create
+  </button>
+
+</div>
