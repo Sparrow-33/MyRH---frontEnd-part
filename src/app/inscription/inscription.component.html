@@ -1,20 +1,20 @@
 <section class="bg-white ">
   <div class="flex justify-center min-h-screen">
-    <div class="hidden bg-cover lg:block lg:w-2/5" style="background-image: url('https://images.unsplash.com/photo-1494621930069-4fd4b2e24a11?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80')">
+    <div class="hidden bg-cover lg:block lg:w-2/5" style="background-image: url('assets/images/interview4.jpg')">
     </div>
 
     <div class="flex items-center w-full max-w-3xl p-8 mx-auto lg:px-12 lg:w-3/5">
       <div class="w-full">
         <h1 class="text-2xl font-semibold tracking-wider text-gray-800 capitalize ">
-          Get your free account now.
+          Obtenez votre compte gratuit
         </h1>
 
         <p class="mt-4 text-gray-500 ">
-          Let’s get you all set up so you can verify your personal account and begin setting up your profile.
+          Commençons par vous préparer afin que vous puissiez vérifier votre compte personnel et commencer à configurer votre profil.
         </p>
 
         <div class="mt-6">
-          <h1 class="text-gray-500 ">Select type of account</h1>
+          <h1 class="text-gray-500 ">type de compte</h1>
 
           <div class="mt-3 md:flex md:items-center md:-mx-2">
             <button class="flex justify-center w-full px-6 py-3 text-white bg-blue-500 rounded-lg md:w-auto md:mx-2 focus:outline-none">
@@ -23,7 +23,7 @@
               </svg>
 
               <span class="mx-2">
-                                client
+                                candidat
                             </span>
             </button>
 
@@ -33,7 +33,7 @@
               </svg>
 
               <span class="mx-2">
-                                worker
+                                entreprise
                             </span>
             </button>
           </div>
@@ -41,38 +41,49 @@
 
         <form class="grid grid-cols-1 gap-6 mt-8 md:grid-cols-2">
           <div>
-            <label class="block mb-2 text-sm text-gray-600 ">First Name</label>
+            <label class="block mb-2 text-sm text-gray-600 ">Nom</label>
             <input type="text" placeholder="John" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg  focus:border-blue-400  focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
           </div>
 
           <div>
-            <label class="block mb-2 text-sm text-gray-600 ">Last name</label>
+            <label class="block mb-2 text-sm text-gray-600 ">Prenom</label>
             <input type="text" placeholder="Snow" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg  focus:border-blue-400  focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
           </div>
 
           <div>
-            <label class="block mb-2 text-sm text-gray-600 ">Phone number</label>
+            <label class="block mb-2 text-sm text-gray-600 ">Telephone</label>
             <input type="text" placeholder="XXX-XX-XXXX-XXX" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg  focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
           </div>
 
           <div>
-            <label class="block mb-2 text-sm text-gray-600 ">Email address</label>
+            <label class="block mb-2 text-sm text-gray-600 ">adresse e-mail</label>
             <input type="email" placeholder="johnsnow@example.com" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg d focus:border-blue-400  focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
           </div>
 
           <div>
-            <label class="block mb-2 text-sm text-gray-600 ">Password</label>
+            <label class="block mb-2 text-sm text-gray-600 ">Mot de passe</label>
             <input type="password" placeholder="Enter your password" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg  focus:border-blue-400  focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
           </div>
 
           <div>
-            <label class="block mb-2 text-sm text-gray-600 ">Confirm password</label>
+            <label for="dropzone-file" class="flex items-center px-3 py-3 mx-auto mt-6 text-center bg-white border-2 border-dashed rounded-lg cursor-pointer ">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-300 " fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+              </svg>
+
+              <h2 class="mx-3 text-gray-400">Profile Photo</h2>
+
+              <input id="dropzone-file" type="file" class="hidden" />
+            </label>
+          </div>
+          <div>
+            <label class="block mb-2 text-sm text-gray-600 ">Confirmer le mot de passe</label>
             <input type="password" placeholder="Enter your password" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg  focus:border-blue-400focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
           </div>
 
           <button
             class="flex items-center justify-between w-full px-6 py-3 text-sm tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
-            <span>Sign Up </span>
+            <span>Inscription </span>
 
             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 rtl:-scale-x-100" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd"

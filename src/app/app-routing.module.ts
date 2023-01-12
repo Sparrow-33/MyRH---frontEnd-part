@@ -5,11 +5,15 @@ import {ListComponent} from "./list/list.component";
 import {HomeComponent} from "./home/home.component";
 import {LoginComponent} from "./login/login.component";
 import {InscriptionComponent} from "./inscription/inscription.component";
+import {ResultsComponent} from "./results/results.component";
+import {NotFoudPageComponent} from "./not-found-page/not-foud-page.component";
 
 const routes: Routes = [
   {path: "", component: HomeComponent},
   {path: "login", component: LoginComponent},
-  {path: "register", component: InscriptionComponent}
+  {path: "register", component: InscriptionComponent},
+  {path: "results", component: ResultsComponent},
+  {path: "**", component: NotFoudPageComponent}
 
 
 ];

@@ -11,6 +11,10 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { InscriptionComponent } from './inscription/inscription.component';
+import {HttpClientModule} from "@angular/common/http";
+import { NotFoudPageComponent } from './not-found-page/not-foud-page.component';
+import { ResultsComponent } from './results/results.component';
+import { SingleResultComponent } from './single-result/single-result.component';
 
 @NgModule({
   declarations: [
@@ -21,12 +25,16 @@ import { InscriptionComponent } from './inscription/inscription.component';
     NavBarComponent,
     LoginComponent,
     HomeComponent,
-    InscriptionComponent
+    InscriptionComponent,
+    NotFoudPageComponent,
+    ResultsComponent,
+    SingleResultComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
