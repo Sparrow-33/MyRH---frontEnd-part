@@ -15,6 +15,8 @@ import {HttpClientModule} from "@angular/common/http";
 import { NotFoudPageComponent } from './not-found-page/not-foud-page.component';
 import { ResultsComponent } from './results/results.component';
 import { SingleResultComponent } from './single-result/single-result.component';
+import { VerificationComponent } from './verification/verification.component';
+import { CreateOffreComponent } from './create-offre/create-offre.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { SingleResultComponent } from './single-result/single-result.component';
     InscriptionComponent,
     NotFoudPageComponent,
     ResultsComponent,
-    SingleResultComponent
+    SingleResultComponent,
+    VerificationComponent,
+    CreateOffreComponent
   ],
   imports: [
     BrowserModule,

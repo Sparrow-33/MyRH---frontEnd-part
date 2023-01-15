@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {ResultService} from "../services/result.service";
 
 @Component({
   selector: 'app-single-result',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./single-result.component.css']
 })
 export class SingleResultComponent {
-
+    constructor( public result :ResultService) {
+    }
 }
