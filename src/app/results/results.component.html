@@ -23,22 +23,23 @@
 
         <!-- Card 1 -->
         <a
-          (click)="result.changeTitle()"
+          *ngFor="let offre of offres "
+          (click)="result.getSingleOffre(offre.id)"
           class="w-[30rem] border-2 border-b-4 border-gray-200 rounded-xl hover:bg-gray-50">
 
           <!-- Badge -->
-          <p class="bg-sky-500 w-fit px-4 py-1 text-sm font-bold text-white rounded-tl-lg rounded-br-xl"> Candidats: 10 </p>
+          <p class="bg-sky-500 w-fit px-4 py-1 text-sm font-bold text-white rounded-tl-lg rounded-br-xl"> Candidats: {{offre.candidature}} </p>
 
           <div class="grid grid-cols-6 p-5 gap-y-2">
 
             <!-- Description -->
             <div class="col-span-5 md:col-span-4 ml-4">
 
-              <p class="text-sky-500 font-bold text-xs">Capgemini </p>
+              <p class="text-sky-500 font-bold text-xs">{{offre.recruteur.nom}} </p>
 
-              <p class="text-gray-600 font-bold"> Développeur Full-Stack</p>
-              <p class="text-gray-400"> Rabat </p>
-              <p class="text-gray-400"> Hybride </p>
+              <p class="text-gray-600 font-bold"> {{offre.title}}</p>
+              <p class="text-gray-400"> {{offre.ville}} </p>
+              <p class="text-gray-400"> {{offre.niveau}} </p>
 
             </div>
 
@@ -53,90 +54,90 @@
 
         <!-- Card 2 -->
         <!-- Card 1 -->
-        <a
-          (click)="result.changeTitle()"
-          class="w-[30rem] border-2 border-b-4 border-gray-200 rounded-xl hover:bg-gray-50">
+<!--        <a-->
+<!--          (click)="result.changeTitle()"-->
+<!--          class="w-[30rem] border-2 border-b-4 border-gray-200 rounded-xl hover:bg-gray-50">-->
 
-          <!-- Badge -->
-          <p class="bg-sky-500 w-fit px-4 py-1 text-sm font-bold text-white rounded-tl-lg rounded-br-xl"> Candidats: 10 </p>
+<!--          &lt;!&ndash; Badge &ndash;&gt;-->
+<!--          <p class="bg-sky-500 w-fit px-4 py-1 text-sm font-bold text-white rounded-tl-lg rounded-br-xl"> Candidats: 10 </p>-->
 
-          <div class="grid grid-cols-6 p-5 gap-y-2">
+<!--          <div class="grid grid-cols-6 p-5 gap-y-2">-->
 
-            <!-- Description -->
-            <div class="col-span-5 md:col-span-4 ml-4">
+<!--            &lt;!&ndash; Description &ndash;&gt;-->
+<!--            <div class="col-span-5 md:col-span-4 ml-4">-->
 
-              <p class="text-sky-500 font-bold text-xs">Capgemini </p>
+<!--              <p class="text-sky-500 font-bold text-xs">Capgemini </p>-->
 
-              <p class="text-gray-600 font-bold"> Développeur Full-Stack</p>
-              <p class="text-gray-400"> Rabat </p>
-              <p class="text-gray-400"> Hybride </p>
+<!--              <p class="text-gray-600 font-bold"> Développeur Full-Stack</p>-->
+<!--              <p class="text-gray-400"> Rabat </p>-->
+<!--              <p class="text-gray-400"> Hybride </p>-->
 
-            </div>
+<!--            </div>-->
 
-            <!-- Price -->
-            <div class="flex col-start-2 ml-4 md:col-start-auto md:ml-0 md:justify-end">
-              <p class="rounded-lg text-sky-500 font-bold bg-sky-100  py-1 px-3 text-sm w-fit h-fit"> CDI</p>
-            </div>
+<!--            &lt;!&ndash; Price &ndash;&gt;-->
+<!--            <div class="flex col-start-2 ml-4 md:col-start-auto md:ml-0 md:justify-end">-->
+<!--              <p class="rounded-lg text-sky-500 font-bold bg-sky-100  py-1 px-3 text-sm w-fit h-fit"> CDI</p>-->
+<!--            </div>-->
 
-          </div>
+<!--          </div>-->
 
-        </a>
-
-        <!-- Card 1 -->
-        <a href="#" class="w-[30rem] border-2 border-b-4 border-gray-200 rounded-xl hover:bg-gray-50">
-
-          <!-- Badge -->
-          <p class="bg-sky-500 w-fit px-4 py-1 text-sm font-bold text-white rounded-tl-lg rounded-br-xl"> Candidats: 10 </p>
-
-          <div class="grid grid-cols-6 p-5 gap-y-2">
-
-            <!-- Description -->
-            <div class="col-span-5 md:col-span-4 ml-4">
-
-              <p class="text-sky-500 font-bold text-xs">Capgemini </p>
-
-              <p class="text-gray-600 font-bold"> Développeur Full-Stack</p>
-              <p class="text-gray-400"> Rabat </p>
-              <p class="text-gray-400"> Hybride </p>
-
-            </div>
-
-            <!-- Price -->
-            <div class="flex col-start-2 ml-4 md:col-start-auto md:ml-0 md:justify-end">
-              <p class="rounded-lg text-sky-500 font-bold bg-sky-100  py-1 px-3 text-sm w-fit h-fit"> CDI</p>
-            </div>
-
-          </div>
-
-        </a>
+<!--        </a>-->
 
         <!-- Card 1 -->
-        <a href="#" class="w-[30rem] border-2 border-b-4 border-gray-200 rounded-xl hover:bg-gray-50">
+<!--        <a href="#" class="w-[30rem] border-2 border-b-4 border-gray-200 rounded-xl hover:bg-gray-50">-->
 
-          <!-- Badge -->
-          <p class="bg-sky-500 w-fit px-4 py-1 text-sm font-bold text-white rounded-tl-lg rounded-br-xl"> Candidats: 10 </p>
+<!--          &lt;!&ndash; Badge &ndash;&gt;-->
+<!--          <p class="bg-sky-500 w-fit px-4 py-1 text-sm font-bold text-white rounded-tl-lg rounded-br-xl"> Candidats: 10 </p>-->
 
-          <div class="grid grid-cols-6 p-5 gap-y-2">
+<!--          <div class="grid grid-cols-6 p-5 gap-y-2">-->
 
-            <!-- Description -->
-            <div class="col-span-5 md:col-span-4 ml-4">
+<!--            &lt;!&ndash; Description &ndash;&gt;-->
+<!--            <div class="col-span-5 md:col-span-4 ml-4">-->
 
-              <p class="text-sky-500 font-bold text-xs">Capgemini </p>
+<!--              <p class="text-sky-500 font-bold text-xs">Capgemini </p>-->
 
-              <p class="text-gray-600 font-bold"> Développeur Full-Stack</p>
-              <p class="text-gray-400"> Rabat </p>
-              <p class="text-gray-400"> Hybride </p>
+<!--              <p class="text-gray-600 font-bold"> Développeur Full-Stack</p>-->
+<!--              <p class="text-gray-400"> Rabat </p>-->
+<!--              <p class="text-gray-400"> Hybride </p>-->
 
-            </div>
+<!--            </div>-->
 
-            <!-- Price -->
-            <div class="flex col-start-2 ml-4 md:col-start-auto md:ml-0 md:justify-end">
-              <p class="rounded-lg text-sky-500 font-bold bg-sky-100  py-1 px-3 text-sm w-fit h-fit"> CDI</p>
-            </div>
+<!--            &lt;!&ndash; Price &ndash;&gt;-->
+<!--            <div class="flex col-start-2 ml-4 md:col-start-auto md:ml-0 md:justify-end">-->
+<!--              <p class="rounded-lg text-sky-500 font-bold bg-sky-100  py-1 px-3 text-sm w-fit h-fit"> CDI</p>-->
+<!--            </div>-->
 
-          </div>
+<!--          </div>-->
 
-        </a>
+<!--        </a>-->
+
+        <!-- Card 1 -->
+<!--        <a href="#" class="w-[30rem] border-2 border-b-4 border-gray-200 rounded-xl hover:bg-gray-50">-->
+
+<!--          &lt;!&ndash; Badge &ndash;&gt;-->
+<!--          <p class="bg-sky-500 w-fit px-4 py-1 text-sm font-bold text-white rounded-tl-lg rounded-br-xl"> Candidats: 10 </p>-->
+
+<!--          <div class="grid grid-cols-6 p-5 gap-y-2">-->
+
+<!--            &lt;!&ndash; Description &ndash;&gt;-->
+<!--            <div class="col-span-5 md:col-span-4 ml-4">-->
+
+<!--              <p class="text-sky-500 font-bold text-xs">Capgemini </p>-->
+
+<!--              <p class="text-gray-600 font-bold"> Développeur Full-Stack</p>-->
+<!--              <p class="text-gray-400"> Rabat </p>-->
+<!--              <p class="text-gray-400"> Hybride </p>-->
+
+<!--            </div>-->
+
+<!--            &lt;!&ndash; Price &ndash;&gt;-->
+<!--            <div class="flex col-start-2 ml-4 md:col-start-auto md:ml-0 md:justify-end">-->
+<!--              <p class="rounded-lg text-sky-500 font-bold bg-sky-100  py-1 px-3 text-sm w-fit h-fit"> CDI</p>-->
+<!--            </div>-->
+
+<!--          </div>-->
+
+<!--        </a>-->
       </div>
 
         <app-single-result></app-single-result>

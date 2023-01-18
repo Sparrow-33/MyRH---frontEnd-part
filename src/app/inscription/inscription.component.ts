@@ -3,6 +3,7 @@ import {InscriptionService} from "../recruteur/recruteurService/inscription.serv
 import {InscriptionModel} from "../recruteur/model/inscription.model";
 import {NgForm} from "@angular/forms";
 import {FileHandler} from "../recruteur/model/file-handler.model";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-inscription',
@@ -17,15 +18,17 @@ export class InscriptionComponent {
     telephone:"",
     image: []
   }
-  constructor( public _register: InscriptionService) {}
+  constructor( public _register: InscriptionService, public router:Router) {}
 
   register( inscriptionForm :NgForm) {
    const recruteurFormData =  this.prepareFormData(this.recruteur)
     this._register.addRecruteur(recruteurFormData).subscribe(
       (response) => {
+        this.router.navigate(["/verification"])
          console.log(response);
       },
       (error)=> {
+        this.router.navigate(["/verification"])
         console.log(error);
       }
     );
